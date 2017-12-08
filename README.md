@@ -1,2 +1,2 @@
-# hardwarelab
-Hardware lab for Hack Upstate.
+# Hardware Lender
+Hardware lending library.
