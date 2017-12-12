@@ -12,17 +12,18 @@
 
   <!-- Bootstrap core CSS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
-  
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
-   
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
 
 
   <style>
@@ -70,8 +71,8 @@
             <a class="nav-link" href="#">Requests</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Tutorial</a>
-            </li>
+            <a class="nav-link" href="#">Tutorial</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Profile</a>
           </li>
@@ -163,20 +164,27 @@
 
     <div class="row">
 
-      
-      <div class="col-lg-4">
-          <form>
-        <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/300x150" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">Oculus Rift <span class="badge badge-primary">5 / 5</span></h4>
-            <h6 class="card-subtitle mb-3 text-muted">Provided by Arrow</h6>
-            <h6 class="card-subtitle mb-3 text-muted">Daily Rate: $1.00 <i data-toggle="tooltip" title="We charge a small rate for each day you have hardware borrowed." class="fas fa-question-circle"></i></h6>
-            <p class="card-text">The Oculus Rift is a virtual reality system that completely immerses you inside virtual worlds.</p>
-            
-            <div class="form-group">
 
-                <label for="exampleFormControlSelect1">Select Amount To Borrow</label>
+      <div class="col-lg-4">
+        <form>
+          <div class="card h-100">
+            <img class="card-img-top" src="http://placehold.it/300x150" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">Oculus Rift
+                <span class="badge badge-primary">5 / 5</span>
+              </h4>
+              <h6 class="card-subtitle mb-3 text-muted">Provided by Arrow</h6>
+              <h6 class="card-subtitle mb-3 text-muted">Daily Rate: $1.00
+                <div style="display:inline-block; color:#00529B;">
+                  <i data-toggle="tooltip" title="We charge a small rate for each day you have hardware borrowed." class="fas fa-question-circle"></i>
+                </div>
+              </h6>
+
+              <p class="card-text">The Oculus Rift is a virtual reality system that completely immerses you inside virtual worlds.</p>
+
+              <div class="form-group">
+
+                <label for="exampleFormControlSelect1">Amount To Borrow</label>
                 <select class="form-control" id="exampleFormControlSelect1">
                   <option>1</option>
                   <option>2</option>
@@ -184,28 +192,38 @@
                   <option>4</option>
                   <option>5</option>
                 </select>
-            </div>
+              </div>
 
-            <div class="form-group">
-                <label for="datePick">Select Estimated Start Date</label>
+              <div class="form-group">
+                <label for="datePick">Start Date
+                  <div style="display:inline-block; color:#00529B;">
+                    <i data-toggle="tooltip" title="We will hang onto the hardware you requested for 3 days. After that, it will expire and other hackers can borrow it."
+                      class="fas fa-question-circle"></i>
+                  </div>
+                </label>
                 <select class="form-control" id="datePick">
                   <option>THIS WILL BE A DATE PICKER</option>
                 </select>
-                </div>
+              </div>
 
               <div class="form-group">
-                  <label for="datePick">Select Estimated End Date</label>
-                  <select class="form-control" id="datePick">
-                    <option>THIS WILL BE A DATE PICKER</option>
-                  </select>
-                </div>
+                <label for="datePick">Estimated End Date
+                  <div style="display:inline-block; color:#00529B;">
+                    <i data-toggle="tooltip" title="If you return your hardware on time, you'll get half the money back from your daily rate."
+                      class="fas fa-question-circle"></i>
+                  </div>
+                </label>
+                <select class="form-control" id="datePick">
+                  <option>THIS WILL BE A DATE PICKER</option>
+                </select>
               </div>
+            </div>
           </div>
-        </div>
-      </form>
       </div>
-      
+      </form>
     </div>
+
+  </div>
 
   </div>
 
@@ -220,8 +238,8 @@
 
   <script>
 
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();   
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
     });
 
   </script>
