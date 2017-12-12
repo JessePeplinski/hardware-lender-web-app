@@ -26,24 +26,6 @@
 
   <link href="../styles.css" rel="stylesheet">
 
-  <style>
-    /*!
-        * Start Bootstrap - Portfolio Item (https://startbootstrap.com/template-overviews/portfolio-item)
-        * Copyright 2013-2017 Start Bootstrap
-        * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-portfolio-item/blob/master/LICENSE)
-        */
-
-    body {
-      padding-top: 54px;
-    }
-
-    @media (min-width: 992px) {
-      body {
-        padding-top: 56px;
-      }
-    }
-  </style>
-
 </head>
 
 <body>
@@ -76,6 +58,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Profile</a>
           </li>
+          <li class="nav-item">
+              <a href="../../index.html" class="btn btn-primary btn-block" role="button"><i class="fas fa-lock"></i> Roles</a>
+            </li>
         </ul>
       </div>
     </div>
@@ -89,9 +74,9 @@
 
         <h2 class="my-3">
           <a href="https://www.google.com/maps/dir/''/the+technology+garden/data=!4m5!4m4!1m0!1m2!1m1!1s0x89d9f3be64671fcb:0xd90a35d916f066ff?sa=X&ved=0ahUKEwjir5jb8PrXAhVD2yYKHaxRAJQQ9RcImQEwEA"
-            target="_blank">235 Harrison St, Syracuse, NY 13202</a>
+            target="_blank">{235 Harrison St, Syracuse, NY 13202}</a>
         </h2>
-        <h3 class="my-3 text-muted">Monday - Friday, 9AM - 5PM</h3>
+        <h3 class="my-3 text-muted">{Monday - Friday}, {9AM - 5PM}</h3>
 
         <div class="my-3">
           <a href="https://www.thetechgarden.com/" target="_blank">
@@ -109,7 +94,7 @@
 
       
     <!-- Portfolio Item Row -->
-    <div class="row text-center mb-5 mt-5">
+    <div class="row text-center mb-4 mt-4">
 
       <div class="col-lg-12 portfolio-item">
         <div class="card h-100">
@@ -151,7 +136,7 @@
 
               <!-- SPONSORS -->
               <div class="tab-pane" id="sponsors" role="tabpanel">
-                <div class="powered-by mb-3">
+                <div class="powered-by">
                   <h5>Sponsors</h5>
                   <p>Thank to our generous sponsors that made this lab possible.</p>
                   <a href="#">
@@ -167,7 +152,7 @@
                     <img src="http://placehold.it/150x150" class="mb-3" alt="">
                   </a>
 
-                  <div class="block">
+                  <div class="block mt-3">
                     <p>Interested in putting your hardware in this lab?</p>
                     <a href="#" class="btn btn-primary" role="button">Sponsor This Library</a>
                   </div>
@@ -178,8 +163,18 @@
               <div class="tab-pane" id="donators" role="tabpanel">
                 <div class="donators mb-3">
                   <h5>Community Donators</h5>
-                  <p>Thanks to our amazing community that has donated hardware for use in this library. Want to donate hardware
-                    you don't use anymore?</p>
+                  <p>Thanks to our amazing community that has donated hardware for use in this library.</p>
+
+                  <div class="col-md-4">
+                    <div class="card text-left">
+                        <div class="card-body">
+                          <h4>{Thing Donated or Amount}</h4>
+                          <a href="#" class="card-link">{Person Name}</a>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <p class="mt-3">Want to donate hardware you don't use anymore?</p>
                   <a href="#" class="btn btn-primary" role="button">Donate Hardware</a>
                 </div>
               </div>
@@ -189,7 +184,7 @@
       </div>
     </div>
 
-    <h1 class="my-4 text-center">Request Hardware to Borrow</h1>
+    <h1 class="text-center my-5">Request Hardware to Borrow</h1>
 
     <div class="row mb-5">
 
