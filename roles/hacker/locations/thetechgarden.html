@@ -24,7 +24,7 @@
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 
-
+  <link href="../styles.css" rel="stylesheet">
 
   <style>
     /*!
@@ -52,7 +52,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="../index.html">Hardware Lender - The Technology Garden</a>
+      <a class="navbar-brand" href="../index.html">Hardware Lender</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -84,86 +84,114 @@
   <!-- Page Content -->
   <div class="container">
 
-    <!-- <h1 class="my-3 text-center">Request Hardware from The Technology Garden</h1> -->
+ <div class="text-center">
+        <h1 class="my-4">Hardware Inventory List at {The Technology Garden}</h1>
 
+        <h2 class="my-3">
+          <a href="https://www.google.com/maps/dir/''/the+technology+garden/data=!4m5!4m4!1m0!1m2!1m1!1s0x89d9f3be64671fcb:0xd90a35d916f066ff?sa=X&ved=0ahUKEwjir5jb8PrXAhVD2yYKHaxRAJQQ9RcImQEwEA"
+            target="_blank">235 Harrison St, Syracuse, NY 13202</a>
+        </h2>
+        <h3 class="my-3 text-muted">Monday - Friday, 9AM - 5PM</h3>
+
+        <div class="my-3">
+          <a href="https://www.thetechgarden.com/" target="_blank">
+            <i class="fas fa-link fa-2x mr-3"></i>
+          </a>
+          <a href="https://www.facebook.com/thetechgarden/" target="_blank">
+            <i class="fab fa-facebook-f fa-2x mr-3"></i>
+          </a>
+          <a href="https://twitter.com/thetechgarden" target="_blank">
+            <i class="fab fa-twitter fa-2x mr-3"></i>
+          </a>
+        </div>
+      </div>
+
+
+      
     <!-- Portfolio Item Row -->
-    <!-- <div class="row text-center">
+    <div class="row text-center mb-5 mt-5">
 
       <div class="col-lg-12 portfolio-item">
         <div class="card h-100">
-          <a href="#">
+          <!-- <a href="#">
             <img class="card-img-top" src="../img/ttg.jpg" alt="">
-          </a>
+          </a> -->
+
+          <div class="card-header">
+            <ul class="nav nav-pills card-header-pills justify-content-center nav-justified" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" href="#lending" data-toggle="tab" role="tab">Instructions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" role="tab" href="#sponsors">Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" role="tab" href="#donators">Donators</a>
+              </li>
+            </ul>
+          </div>
+
           <div class="card-body">
-            <h3 class="card-title mb-3">
-              <a href="locations/thetechgarden.html">The Technology Garden</a>
-            </h3>
-            <h4 class="card-subtitle mb-3">
-              <a href="https://www.google.com/maps/dir/''/the+technology+garden/data=!4m5!4m4!1m0!1m2!1m1!1s0x89d9f3be64671fcb:0xd90a35d916f066ff?sa=X&ved=0ahUKEwjir5jb8PrXAhVD2yYKHaxRAJQQ9RcImQEwEA"
-                target="_blank">235 Harrison St, Syracuse, NY 13202</a>
-            </h4>
-            <h4 class="card-subtitle mb-3 text-muted">Monday - Friday, 9AM - 5PM</h4>
 
-            <div class="mb-3">
-              <a href="https://www.thetechgarden.com/" target="_blank">
-                <i class="fas fa-link fa-2x mr-3"></i>
-              </a>
-              <a href="https://www.facebook.com/thetechgarden/" target="_blank">
-                <i class="fab fa-facebook-f fa-2x mr-3"></i>
-              </a>
-              <a href="https://twitter.com/thetechgarden" target="_blank">
-                <i class="fab fa-twitter fa-2x mr-3"></i>
-              </a>
-            </div>
-            
-            <p class="card-text">The Tech Garden has been the center of Upstate's entrepreneurial ecosystem for over a decade. Become a member
+            <!-- <p class="card-text">The Tech Garden has been the center of Upstate's entrepreneurial ecosystem for over a decade. Become a member
               and we will put you on a Road Map that leverages our unique programs, resources, and events that can accelerate
-              your technology Start up.</p>
+              your technology Start up.</p> -->
 
-            <div class="lending-instructions mb-3">
-              <h5>Lending Instructions</h5>
-              <p class="card-text">Our hardware library is located {inside The Technology Garden in the front}. When you arrive {at the main entrance},
-                talk to {Lynn Hughes at XXX.XXX.XXXX or name@test.com} and they will help you check out hardware.</p>
-            </div>
+            <!-- TAB PANE CONTENT -->
+            <div class="tab-content">
 
-            <div class="powered-by mb-3">
-              <h5>Powered By</h5>
-              <p>Thanks to our generous sponsors that made this lab possible. Interested in putting your hardware in this lab?</p>
-              <a href="#">
-                <img src="http://placehold.it/150x150" class="mb-3" alt="">
-              </a>
-              <a href="#">
-                <img src="http://placehold.it/150x150" class="mb-3" alt="">
-              </a>
-              <a href="#">
-                <img src="http://placehold.it/150x150" class="mb-3" alt="">
-              </a>
-              <a href="#">
-                <img src="http://placehold.it/150x150" class="mb-3" alt="">
-              </a>
-
-              <div class="block">
-                <a href="#" class="btn btn-primary" role="button">Sponsor This Library</a>
+              <!-- LENDING INSTRUCTIONS -->
+              <div class="tab-pane active" id="lending" role="tabpanel">
+                <div class="lending-instructions mb-3">
+                  <h5>Lending Instructions</h5>
+                  <p class="card-text">Our hardware library is located {inside The Technology Garden in the front}. When you arrive {at the main
+                    entrance}, talk to {Lynn Hughes at XXX.XXX.XXXX or name@test.com} and they will help you check out hardware.</p>
+                </div>
               </div>
 
-            </div>
+              <!-- SPONSORS -->
+              <div class="tab-pane" id="sponsors" role="tabpanel">
+                <div class="powered-by mb-3">
+                  <h5>Sponsors</h5>
+                  <p>Thank to our generous sponsors that made this lab possible.</p>
+                  <a href="#">
+                    <img src="http://placehold.it/150x150" class="mb-3" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="http://placehold.it/150x150" class="mb-3" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="http://placehold.it/150x150" class="mb-3" alt="">
+                  </a>
+                  <a href="#">
+                    <img src="http://placehold.it/150x150" class="mb-3" alt="">
+                  </a>
 
-            <div class="donators mb-3">
-              <h5>Donators</h5>
-              <p>Thanks to our amazing community that has donated hardware for use in the library.</p>
-            </div>
+                  <div class="block">
+                    <p>Interested in putting your hardware in this lab?</p>
+                    <a href="#" class="btn btn-primary" role="button">Sponsor This Library</a>
+                  </div>
+                </div>
+              </div>
 
-            <a href="#" class="btn btn-primary" role="button">Donate Hardware</a>
+              <!-- DONATORS -->
+              <div class="tab-pane" id="donators" role="tabpanel">
+                <div class="donators mb-3">
+                  <h5>Community Donators</h5>
+                  <p>Thanks to our amazing community that has donated hardware for use in this library. Want to donate hardware
+                    you don't use anymore?</p>
+                  <a href="#" class="btn btn-primary" role="button">Donate Hardware</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <h2 class="text-center">Hardware Inventory List at {The Technology Garden}</h2>
-    <h3 class="text-center">Request Hardware To Borrow</h3>
+    <h1 class="my-4 text-center">Request Hardware to Borrow</h1>
 
-    <div class="row">
-
+    <div class="row mb-5">
 
       <div class="col-lg-4">
         <form>
@@ -186,6 +214,7 @@
 
                 <label for="exampleFormControlSelect1">Amount To Borrow</label>
                 <select class="form-control" id="exampleFormControlSelect1">
+                  <option>0</option>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -193,7 +222,7 @@
                   <option>5</option>
                 </select>
               </div>
-
+              <!-- 
               <div class="form-group">
                 <label for="datePick">Start Date
                   <div style="display:inline-block; color:#00529B;">
@@ -216,16 +245,41 @@
                 <select class="form-control" id="datePick">
                   <option>THIS WILL BE A DATE PICKER</option>
                 </select>
-              </div>
+              </div> -->
+
             </div>
           </div>
+        </form>
       </div>
-      </form>
+
+    </div>
+
+    <div class="row mb-5">
+
+      <div class="col-lg-12 text-center">
+        <form>
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">{X} Items Selected</h3>
+
+              <h4>Ready to Hack?</h4>
+              <h5>Read the terms and enter your credit card information below</h5>
+              <p class="card-text">Click the button below to read the terms and conditions of the hardware library and enter your credit card
+                number.
+              </p>
+
+              <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#myModal">Complete hardware request</button>
+
+            </div>
+          </div>
+        </form>
+      </div>
+
     </div>
 
   </div>
 
-  </div>
+ 
 
 
   <!-- Footer -->
@@ -236,8 +290,37 @@
     <!-- /.container -->
   </footer>
 
-  <script>
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
 
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Read terms and enter credit card to get your hardware</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          A BUNCH OF LEGAL STUFF AND OPEN STRIPE INTEGRATION
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <a class="btn btn-primary" href="#" role="button">Checkout Hardware</a>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script>
+    // Tooltip modal
     $(document).ready(function () {
       $('[data-toggle="tooltip"]').tooltip();
     });
