@@ -25,7 +25,6 @@
 
     <link href="../styles.css" rel="stylesheet">
 
-
 </head>
 
 <body>
@@ -95,57 +94,107 @@
     <div class="container">
 
         <!-- Page Heading -->
-        <h1 class="my-4 text-center">Hardware Requests</h1>
-        <h2 class="my-4 text-center">The Technology Garden</h2>
+        <h1 class="my-4 text-center">Review Request</h1>
+        <h2 class="my-4 text-center">Check-out and Check-in Hardware</h2>
 
-        <div class="row">
+        <div class="row no-gutters">
 
-            <div class="input-group input-group-lg mb-4">
-                <input type="text" class="form-control" placeholder="Search hacker name" aria-describedby="sizing-addon1">
+            <div class="col-lg-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">{Hacker Name}</h4>
+                        <h6 class="mb-2 text-muted">{EMAIL}</h6>
+                        <h6 class="mb-2 text-muted">{PHONE}</h6>
+                        <p class="card-text"></p>
+                        <!-- <a href="#" class="btn btn-primary">View archived hardware requests</a> -->
+                    </div>
+                </div>
             </div>
+
+            <h3>Requested Items</h3>
 
             <table class="table table-striped">
                 <thead class="thead-dark">
                     <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Username</th>
-                        <th>Email</th>
-                        <th>Phone</th>
-                        <th>Checked Out Items</th>
-                        <th>Status</th>
+                        <th>Item Name</th>
+                        <th>Avaliable In Stock</th>
+                        <th>Quantity Checking Out</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                        <td>name@test.com</td>
-                        <td>XXX.XXX.XXXX</td>
-                        <td>0</td>
-                        <td><a href="review-request.html" class="btn btn-primary btn-block" role="button">Review</a></td>
+                        <td>Oculus Rift</td>
+                        <td>5</td>
+                        <td>
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="ml-2">
+                                    / 5
+                                </div>
+                            </form>
+                        </td>
                     </tr>
                     <tr>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>name@test.com</td>
-                        <td>XXX.XXX.XXXX</td>
-                        <td>0</td>
-                        <td><a href="review-request.html" class="btn btn-primary btn-block" role="button">Review</a></td>
-                    </tr>
-                    <tr>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                        <td>name@test.com</td>
-                        <td>XXX.XXX.XXXX</td>
-                        <td>0</td>
-                        <td><a href="review-request.html" class="btn btn-primary btn-block" role="button">Review</a></td>
+                        <td>{Item Name}</td>
+                        <td>{Number In Stock}</td>
+                        <td>
+                            <form class="form-inline">
+                                <div class="form-group">
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>0</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="ml-2">
+                                    / 5
+                                </div>
+                            </form>
+                        </td>
                     </tr>
                 </tbody>
             </table>
+
+
+            <div class="col-lg-12 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="block text-center">
+                            <a href="#" class="btn btn-primary" role="button">Verify ID and Mark as Checked Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Currently Checked Out</h3>
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Quantity Returning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{Item Name}</td>
+                        <td>sadasd</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
     </div>
 
