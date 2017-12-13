@@ -43,33 +43,45 @@
             <a href="../index.html" class="btn btn-primary" role="button">
               <i class="fas fa-lock"></i> Roles</a>
           </li>
+          
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLocations" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Libraries
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLocations">
+                <a class="dropdown-item" href="#">The Technology Garden</a>
+                <a class="dropdown-item" href="#">Location 2</a>
+                <a class="dropdown-item" href="#">Request New Library</a>
+              </div>
+            </li>
+
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLinkLocation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  {The Technology Garden}
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLocation">
+                    <a class="dropdown-item" href="index.html">Dashboard</a>
+                    <a class="dropdown-item" href="#">View Hardware Requests</a>
+                    <a class="dropdown-item" href="#">Add Organizer</a>
+                    <a class="dropdown-item" href="#">View or Modify Organizers</a>
+                    <a class="dropdown-item" href="#">Modify This Library</a>
+                    <a class="dropdown-item" href="#">Add New Item</a>
+                    <a class="dropdown-item" href="#">View or Modify Items</a>
+                  </div>
+              </li>
+
           <li class="nav-item">
             <div class="dropdown">
               <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
-                Hackerspace Organizer
+                Emulate
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="index.html">Dashboard</a>
-                <a class="dropdown-item" href="#">Add Hackerspace Organizer</a>
-                <a class="dropdown-item" href="#">Create New Event</a>
-                <a class="dropdown-item" href="#">View Events</a>
-                <a class="dropdown-item" href="#">Create New Item</a>
-                <a class="dropdown-item" href="#">View Items</a>
+                <a class="dropdown-item" href="#">Emulate Hacker</a>
               </div>
             </div>
           </li>
-          <li class="nav-item">
-              <div class="dropdown">
-                <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                  aria-expanded="false">
-                  Emulate
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Emulate Hacker</a>
-                </div>
-              </div>
-            </li>
         </ul>
       </div>
     </div>
@@ -80,22 +92,59 @@
 
     <!-- Page Heading -->
     <h1 class="my-4 text-center">Hardware Lender - Hackerspace Organizer Dashboard</h1>
-    <h2 class="my-4 text-center">Manage your hardware libraries</h2>
+    <h2 class="my-4 text-center">Manage {The Technology Garden} Hardware Library</h2>
 
-    <div class="row mb-4">
-      <div class="col-lg-6">
+    <div class="row">
 
+        <div class="col-lg-12 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Hardware Requests</h4>
+                <h6 class="card-subtitle mb-2 text-muted">Check in and check out hardware</h6>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">View hardware requests</a>
+                <!-- <a href="#" class="btn btn-primary">View archived hardware requests</a> -->
+              </div>
+            </div>
+          </div>
+
+      <div class="col-lg-12 mb-4">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Hackerspace Organizers</h4>
-            <h6 class="card-subtitle mb-2 text-muted">Add or Remove Hackerspace Organizers</h6>
-            <!-- <p class="card-text">Text</p> -->
-            <a href="#" class="card-link">Add Organizer</a>
-            <a href="#" class="card-link">Remove Organizer</a>
+            <h4 class="card-title">Organizers</h4>
+            <h6 class="card-subtitle mb-2 text-muted">View, Add, Edit, or Remove Hackerspace Organizers</h6>
+            <p class="card-text">Organizers will have all the same rights and privellages as you.</p>
+            <a href="#" class="btn btn-primary">Add Organizer</a>
+            <a href="#" class="btn btn-primary">View or Modify Organizers</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-12 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Libraries</h4>
+            <h6 class="card-subtitle mb-2 text-muted">View, edit, remove, or request a new hackerspace locations</h6>
+            <p class="card-text">Put in a request to add another hackerspace location or modify existing ones.</p>
+            <!-- <a href="#" class="btn btn-primary">Request New Hackerspace Location</a> -->
+            <a href="#" class="btn btn-primary">Modify This Library</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Items</h4>
+              <h6 class="card-subtitle mb-2 text-muted">View, Add, Edit, or Remove Items</h6>
+              <p class="card-text">Manage items in your libraries</p>
+              <a href="#" class="btn btn-primary">Add new item</a>
+              <a href="#" class="btn btn-primary">View or Modify Items</a>
+            </div>
           </div>
         </div>
 
-      </div>
     </div>
     <!-- /.row -->
 
