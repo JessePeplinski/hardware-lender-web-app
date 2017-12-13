@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hardware Lender - Admin</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+    <link href="../styles.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Hardware Lender</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="../index.html" class="btn btn-primary" role="button">
+                            <i class="fas fa-lock"></i> Roles</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLocations" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            Libraries
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLocations">
+                            <a class="dropdown-item" href="#">The Technology Garden</a>
+                            <a class="dropdown-item" href="#">Request New Library</a>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLinkLocation" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            {The Technology Garden}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLocation">
+                            <a class="dropdown-item" href="index.html">Dashboard</a>
+                            <a class="dropdown-item" href="#">View Hardware Requests
+                                <span class="badge badge-primary">2 New</span>
+                            </a>
+                            <a class="dropdown-item" href="#">Add Organizer</a>
+                            <a class="dropdown-item" href="#">View or Modify Organizers</a>
+                            <a class="dropdown-item" href="#">Modify This Library</a>
+                            <a class="dropdown-item" href="#">Add New Item</a>
+                            <a class="dropdown-item" href="#">View or Modify Items</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Emulate
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Emulate Hacker</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <h1 class="my-4 text-center">Hardware Requests</h1>
+        <h2 class="my-4 text-center">The Technology Garden</h2>
+
+        <div class="row">
+
+            <div class="input-group input-group-lg mb-4">
+                <input type="text" class="form-control" placeholder="Search hacker name" aria-describedby="sizing-addon1">
+            </div>
+
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Checked Out Items</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                        <td>name@test.com</td>
+                        <td>XXX.XXX.XXXX</td>
+                        <td>0</td>
+                        <td><a href="#" class="btn btn-primary btn-block" role="button">Review</a></td>
+                    </tr>
+                    <tr>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                        <td>name@test.com</td>
+                        <td>XXX.XXX.XXXX</td>
+                        <td>0</td>
+                        <td><a href="#" class="btn btn-primary btn-block" role="button">Review</a></td>
+                    </tr>
+                    <tr>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                        <td>name@test.com</td>
+                        <td>XXX.XXX.XXXX</td>
+                        <td>0</td>
+                        <td><a href="#" class="btn btn-primary btn-block" role="button">Review</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white float-left">Copyright &copy; Your Website 2017</p>
+            <p class="m-0 text-center text-white float-right">Need help? Contact team@hardwarelender.com</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+</body>
+
+</html>
