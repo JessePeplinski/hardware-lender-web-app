@@ -264,10 +264,7 @@
               <h3 class="card-title">{X} Items Selected</h3>
 
               <h4>Ready to Hack?</h4>
-              <h5>Read the terms and enter your credit card information below</h5>
-              <p class="card-text">Click the button below to read the terms and conditions of the hardware library and enter your credit card
-                number.
-              </p>
+              <p class="card-text">Click the button below to read the terms and conditions of the hardware library and enter your credit card number.</p>
 
               <button type="button" class="btn btn-primary text-uppercase" data-toggle="modal" data-target="#myModal">Complete hardware request</button>
 
@@ -297,18 +294,39 @@
 
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title">Read terms and enter credit card to get your hardware</h4>
+          <h4 class="modal-title">Read terms, sign, and enter credit card to get your hardware!</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
         <!-- Modal body -->
         <div class="modal-body">
-          A BUNCH OF LEGAL STUFF AND OPEN STRIPE INTEGRATION
+          <form>
+            <p>You're almost there! Please take a moment to let us know what you're planning to create, read our terms and service (taken from <a href="https://hardware.mlh.io/waiver">MLH's page here</a>), then sign below.</p>
+
+            <h3>Step 1 of 3: Tell us what are you are planning to make</h3>
+
+            <div class="form-group">
+              <label for="exampleTextarea">Tell us what you are planning to make! A rain detecter with a Raspberry Pi? A robot to take over humanity? A microcontroller to make hotdogs?</label>
+              <textarea class="form-control" placeholder="What are you going to create?" id="exampleTextarea" rows="3"></textarea>
+            </div>
+
+            <h3>Step 2 of 3: Read our terms of service and sign below</h3>
+
+            <div class="form-group">
+              <label for="formGroupExampleInput">By entering a digital signature below, you agree to our terms of service listed <a href="https://hardware.mlh.io/waiver">here (example)</a>. Please read it!</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your first and last name.">
+            </div>
+
+            <h3>Step 3 of 3: Complete your request via stripe below</h3>
+
+            <p>A new modal will open prompting you for a credit card number that will be charged upon returning your hardware.</p>
+            <a class="btn btn-primary" href="thetechgarden-success.html" role="button">Checkout Hardware via Stripe</a>
+
+          </form>
         </div>
 
         <!-- Modal footer -->
         <div class="modal-footer">
-          <a class="btn btn-primary" href="thetechgarden-success.html" role="button">Checkout Hardware</a>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
 
