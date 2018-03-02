@@ -39,46 +39,43 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="../index.html" class="btn btn-primary" role="button">
-              <i class="fas fa-lock"></i> Roles</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              Profile</a>
-          </li>
 
           <li class="nav-item">
             <a href="#" class="nav-link">
               Tutorial</a>
           </li>
-          
+
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLocations" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Libraries
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLocations" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Libraries
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLocations">
+              <a class="dropdown-item" href="#">View Libraries</a>
+              <a class="dropdown-item" href="#">Request New Library</a>
+            </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLinkLocation" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              {The Technology Garden}
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLocation">
+              <a class="dropdown-item" href="index.html">Dashboard</a>
+              <a class="dropdown-item" href="hardware-requests.html">View Hardware Requests
+                <span class="badge badge-primary">2 New</span>
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLocations">
-                <a class="dropdown-item" href="#">The Technology Garden</a>
-                <a class="dropdown-item" href="#">Request New Library</a>
-              </div>
-            </li>
+              <a class="dropdown-item" href="#">Modify This Library</a>
+              <a class="dropdown-item" href="#">Add, View, or Modify Organizers</a>
+              <a class="dropdown-item" href="#">Add, View, or Modify Items</a>
+            </div>
+          </li>
 
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLinkLocation" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  {The Technology Garden}
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLocation">
-                    <a class="dropdown-item" href="index.html">Dashboard</a>
-                    <a class="dropdown-item" href="hardware-requests.html">View Hardware Requests <span class="badge badge-primary">2 New</span></a>
-                    <a class="dropdown-item" href="#">Add Organizer</a>
-                    <a class="dropdown-item" href="#">View or Modify Organizers</a>
-                    <a class="dropdown-item" href="#">Modify This Library</a>
-                    <a class="dropdown-item" href="#">Add New Item</a>
-                    <a class="dropdown-item" href="#">View or Modify Items</a>
-                  </div>
-              </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              My Profile</a>
+          </li>
 
           <li class="nav-item">
             <div class="dropdown">
@@ -91,6 +88,12 @@
               </div>
             </div>
           </li>
+
+          <li class="nav-item">
+            <a href="../index.html" class="btn btn-primary" role="button">
+              <i class="fas fa-lock"></i> Roles</a>
+          </li>
+
         </ul>
       </div>
     </div>
@@ -105,17 +108,19 @@
 
     <div class="row">
 
-        <div class="col-lg-12 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Hardware Requests <span class="badge badge-primary">2 New</span></h4>
-                <h6 class="card-subtitle mb-2 text-muted">Check-in or check-out hardware from {The Technology Garden}</h6>
-                <p class="card-text"></p>
-                <a href="hardware-requests.html" class="btn btn-primary">View hardware requests</a>
-                <!-- <a href="#" class="btn btn-primary">View archived hardware requests</a> -->
-              </div>
-            </div>
+      <div class="col-lg-12 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Hardware Requests
+              <span class="badge badge-primary">2 New</span>
+            </h4>
+            <h6 class="card-subtitle mb-2 text-muted">Check-in or check-out hardware from {The Technology Garden}</h6>
+            <p class="card-text"></p>
+            <a href="hardware-requests.html" class="btn btn-primary">View hardware requests</a>
+            <!-- <a href="#" class="btn btn-primary">View archived hardware requests</a> -->
           </div>
+        </div>
+      </div>
 
       <div class="col-lg-12 mb-4">
         <div class="card">
@@ -143,16 +148,16 @@
       </div>
 
       <div class="col-lg-12 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Items</h4>
-              <h6 class="card-subtitle mb-2 text-muted">View, Add, Edit, or Remove Items</h6>
-              <p class="card-text">Manage items in {The Technology Garden}</p>
-              <a href="#" class="btn btn-primary">Add new item</a>
-              <a href="#" class="btn btn-primary">View or Modify Items</a>
-            </div>
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Items</h4>
+            <h6 class="card-subtitle mb-2 text-muted">View, Add, Edit, or Remove Items</h6>
+            <p class="card-text">Manage items in {The Technology Garden}</p>
+            <a href="#" class="btn btn-primary">Add new item</a>
+            <a href="#" class="btn btn-primary">View or Modify Items</a>
           </div>
         </div>
+      </div>
 
     </div>
     <!-- /.row -->
