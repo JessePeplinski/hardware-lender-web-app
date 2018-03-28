@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Hardware Lender - Admin</title>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+    crossorigin="anonymous"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+
+  <link href="../styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Hardware Lender</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Locations
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Items</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="requests.html">Requests</a>
+                <span class="sr-only">(current)</span>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Tutorial</a>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                  <a href="../index.html" class="btn btn-primary btn-block" role="button"><i class="fas fa-lock"></i> Roles</a>
+                </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading -->
+    <h1 class="my-4 text-center">Hardware Requests</h1>
+    <h2 class="my-4 text-center">Check-out and Check-in Hardware</h2>
+
+    <div class="row no-gutters">
+
+      <h3>Requested Items</h3>
+      <h4>Requested at 11:34am on 3/27/2018</h4>
+
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>Item Name</th>
+            <th>Avaliable / Total Stock</th>
+            <th>Quantity Checking Out</th>
+            <th>Provided By</th>
+            <th>Daily Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Oculus Rift</td>
+            <td>5/5</td>
+            <td>
+              <form class="form-inline">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="ml-2">
+                  / 5
+                </div>
+              </form>
+            </td>
+            <td>Arrow</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td>{Item Name}</td>
+            <td>{Number In Stock}</td>
+            <td>
+              <form class="form-inline">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="ml-2">
+                  / 5
+                </div>
+              </form>
+            </td>
+            <td>Arrow</td>
+            <td>$1.00</td>
+          </tr>
+          <tr>
+            <td>{Item Name}</td>
+            <td>{Number In Stock}</td>
+            <td>
+              <form class="form-inline">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="ml-2">
+                  / 5
+                </div>
+              </form>
+            </td>
+            <td>Arrow</td>
+            <td>$1.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="col-lg-12 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="block text-center">
+                Awaiting approval to be checked out
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Currently Checked Out</h3>
+
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>Item Name</th>
+            <th>Quantity Returning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{Item Name}</td>
+            <td>
+              <form class="form-inline">
+                <div class="form-group">
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="ml-2">
+                  / 5
+                </div>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="col-lg-12 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <div class="block text-center">
+              <a href="#" class="btn btn-primary" role="button">I'm done with this hardware</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white float-left">Copyright &copy; Your Website 2017</p>
+      <p class="m-0 text-center text-white float-right">Need help? Contact team@hardwarelender.com</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+</body>
+
+</html>
