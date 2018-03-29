@@ -25,6 +25,7 @@
 
   <link href="../styles.css" rel="stylesheet">
 
+
 </head>
 
 <body>
@@ -32,7 +33,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Hardware Lender</a>
+      <a class="navbar-brand" href="index.html">Hardware Lender</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,7 +53,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLocations">
               <a class="dropdown-item" href="#">View Libraries</a>
-              <a class="dropdown-item" href="request-or-modify-library.html">Request New Library</a>
+              <a class="dropdown-item" href="#">Request New Library</a>
             </div>
           </li>
 
@@ -103,101 +104,68 @@
   <div class="container">
 
     <!-- Page Heading -->
-    <h1 class="my-4 text-center">Hackerspace Organizer Dashboard</h1>
-    <h2 class="my-4 text-center">Manage {The Technology Garden} Hardware Library</h2>
+    <h1 class="my-4 text-center">Hardware Inventory</h1>
+    <h2 class="my-4 text-center">The Technology Garden</h2>
 
-    <div class="row">
-
-      <div class="col-lg-12 mb-4">
+    <div class="col-lg-12 mb-4">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Hardware Requests
-              <span class="badge badge-primary">2 New</span>
-            </h4>
-            <h6 class="card-subtitle mb-2 text-muted">Check-in or check-out hardware requests</h6>
-            <p class="card-text"></p>
-            <a href="hardware-requests.html" class="btn btn-primary">View current hardware requests</a>
-            <!-- <a href="#" class="btn btn-primary">View old hardware requests</a> -->
+            <div class="block text-center">
+              <a href="#" class="btn btn-primary" role="button">Add Inventory</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- <div class="col-lg-12 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Sponsor Requests
-                <span class="badge badge-primary">2 New</span>
-              </h4>
-              <h6 class="card-subtitle mb-2 text-muted">View incoming sponsorship requests</h6>
-              <p class="card-text"></p>
-              <a href="#" class="btn btn-primary">View sponsor requests</a>
-            </div>
-          </div>
-        </div>
+    <div class="row no-gutters">
 
-        <div class="col-lg-12 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Donator Requests
-                  <span class="badge badge-primary">2 New</span>
-                </h4>
-                <h6 class="card-subtitle mb-2 text-muted">View incoming donator requests</h6>
-                <p class="card-text"></p>
-                <a href="#" class="btn btn-primary">View hardware requests</a>
-              </div>
-            </div>
-          </div> -->
-
-      <div class="col-lg-12 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Modify Library</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Edit information about this hardware library</h6>
-              <!-- <p class="card-text">Mhackerspace location or modify existing ones.</p> -->
-              <!-- <a href="#" class="btn btn-primary">Request New Hackerspace Location</a> -->
-              <a href="request-or-modify-library.html" class="btn btn-primary">Modify This Library</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-12 mb-4">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Inventory</h4>
-                <h6 class="card-subtitle mb-2 text-muted">View, Add, Edit, or Remove Inventory</h6>
-                <p class="card-text">Manage Inventory in {The Technology Garden}</p>
-                <a href="inventory.html" class="btn btn-primary">Add, View or Modify Inventory</a>
-              </div>
-            </div>
-          </div>
-
-      <div class="col-lg-12 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Organizers</h4>
-            <h6 class="card-subtitle mb-2 text-muted">View, Add, Edit, or Remove Hackerspace Organizers</h6>
-            <p class="card-text">Organizers will have all the same rights and privellages as you.</p>
-            <a href="#" class="btn btn-primary">Add, View, or Modify Organizers</a>
-          </div>
-        </div>
+      <div class="input-group input-group-lg mb-4">
+        <input type="text" class="form-control" placeholder="Search hacker name" aria-describedby="sizing-addon1">
       </div>
 
-      <div class="col-lg-12 mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Delete Library</h4>
-              <h6 class="card-subtitle mb-2 text-muted">Delete this hardware library</h6>
-              <!-- <p class="card-text">Mhackerspace location or modify existing ones.</p> -->
-              <!-- <a href="#" class="btn btn-primary">Request New Hackerspace Location</a> -->
-              <a href="#" class="btn btn-danger">Delete This Library</a>
-            </div>
-          </div>
-        </div>
-
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Price</th>
+            <th>Vendor</th>
+            <th>Sponsored By</th>
+            <th>Notes</th>
+            <th></th>
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Oculus Rift</td>
+            <td>
+                <div class="form-group">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                      <option>Checked In</option>
+                      <option>Checked Out</option>
+                      <option>Damaged</option>
+                      <option>Lost</option>
+                      <option>Stolen</option>
+                    </select>
+                  </div>
+            </td>
+            <td>$599.99</td>
+            <td>Oculus VR</td>
+            <td>Arrow</td>
+            <td>View</td>
+            <td>
+              <a href="#" class="btn btn-primary btn-block" role="button">Edit</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <!-- /.row -->
-
   </div>
+
+
   <!-- /.container -->
 
   <!-- Footer -->
